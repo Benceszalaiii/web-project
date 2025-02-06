@@ -827,7 +827,7 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
     border: 1px solid var(--nav-button-bg);
     border-radius: 4px;
     padding: 0.8em 2em;
-    background: var(--bg);
+    background: var(--nav-button-bg);
     transition: 0.2s;
   }
   .nav-button:hover {
