@@ -12,3 +12,4 @@ export default {
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
+// Just some stuff to reload actions
