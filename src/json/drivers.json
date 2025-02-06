@@ -5,10 +5,124 @@
   "team": "Red Bull Racing",
   "headshot_url": "https://www.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/1col/image.png"
  },
-  "23": {
-  "full_name": "Max Verstappen",
-  "name_acronym": "VER",
-  "team": "Red Bull Racing",
-  "headshot_url": "https://www.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/1col/image.png"
+ "81": {
+    "full_name": "Oscar Piastri",
+    "name_acronym": "PIA",
+    "team": "McLaren",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OSCPIA01_Oscar_Piastri/oscpia01.png"
+ },
+ "":{
+    "full_name": "",
+    "name_acronym": "",
+    "team": "",
+    "headshot_url": ""
+ },
+ "4":{
+    "full_name": "Lando Norris",
+    "name_acronym": "NOR",
+    "team": "McLaren",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png"
+ },
+ "16":{
+    "full_name": "Charles Leclerc",
+    "name_acronym": "LEC",
+    "team": "Ferrari",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png"
+ },
+ "44":{
+    "full_name": "Lewis Hamilton",
+    "name_acronym": "HAM",
+    "team": "Ferrari",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png"
+ },
+ "30":{
+    "full_name": "Liam Lawson",
+    "name_acronym": "LAW",
+    "team": "Racing Bull",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LIALAW01_Liam_Lawson/lialaw01.png"
+ },
+ "63":{
+    "full_name": "George Russell",
+    "name_acronym": "RUS",
+    "team": "Mercedes",
+    "headshot_url": "https://www.formula1.com/content/dam/fom-website/drivers/G/GEORUS01_George_Russell/georus01.png.transform/1col/image.png"
+ },
+ "":{
+    "full_name": "Andrea Kimi Antonelli",
+    "name_acronym": "ANT",
+    "team": "Mercedes",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ANDANT01_Andrea%20Kimi_Antonelli/andant01.png"
+ },
+ "18":{
+    "full_name": "Lance Stroll",
+    "name_acronym": "Lance Stroll",
+    "team": "Aston Martin",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANSTR01_Lance_Stroll/lanstr01.png"
+ },
+ "14":{
+    "full_name": "Fernando Alonso",
+    "name_acronym": "ALO",
+    "team": "Aston Martin",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FERALO01_Fernando_Alonso/feralo01.png"
+ },
+ "10":{
+    "full_name": "Pierre Gasly",
+    "name_acronym": "GAS",
+    "team": "Alpine",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/P/PIEGAS01_Pierre_Gasly/piegas01.png"
+ },
+ "7":{
+    "full_name": "Jack Doohan",
+    "name_acronym": "DOO",
+    "team": "Alpine",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/J/JACDOO01_Jack_Doohan/jacdoo01.png"
+ },
+ "6":{
+    "full_name": "Isack Hadjar",
+    "name_acronym": "HAD",
+    "team": "Racing BUll",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/I/ISAHAD01_Isack_Hadjar/isahad01.png"
+ },
+ "22":{
+    "full_name": "Yuki Tsunoda",
+    "name_acronym": "TSU",
+    "team": "AlphaTauri",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/Y/YUKTSU01_Yuki_Tsunoda/yuktsu01.png"
+ },
+ "31":{
+    "full_name": "Esteban Ocon",
+    "name_acronym": "OCO",
+    "team": "Alpine",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/E/ESTOCO01_Esteban_Ocon/estoco01.png"
+ },
+ "87":{
+    "full_name": "Oliver Bearman",
+    "name_acronym": "BEA",
+    "team": "Haas",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OLIBEA01_Oliver_Bearman/olibea01.png"
+ },
+ "23":{
+    "full_name": "Alexander Albon",
+    "name_acronym": "ALB",
+    "team": "Williams",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ALEALB01_Alexander_Albon/alealb01.png"
+ },
+ "55":{
+    "full_name": "Carlos Sainz",
+    "name_acronym": "SAI",
+    "team": "Williams",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png"
+ },
+ "27":{
+    "full_name": "Nico Hulkenberg",
+    "name_acronym": "HUL",
+    "team": "Kick Sauber",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png"
+ },
+ "5":{
+    "full_name": "Gabriel Bortoleto",
+    "name_acronym": "BOR",
+    "team": "Kick Sauber",
+    "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png"
  }
 }
