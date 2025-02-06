@@ -15,7 +15,9 @@ following conditions are met:
         above copyright notice, this list of conditions and
         the following disclaimer in the documentation and/or
         other materials provided with the distribution.
+
     3. Neither the name of the SZSZSZ nor the names
+
         of its contributors may be used to endorse or promote
         products derived from this software without specific
         prior written permission.
@@ -35,11 +37,13 @@ following conditions are met:
                 must be recorded performing the full Chicken Dance,
                 in an original video at the entity's own expense,
                 and a video encoded in OGG Theora format or a format
+
                 and codec specified by Benceszalaiii, at least three (3)
                 minutes in length, must be submitted to Benceszalaiii,
                 provided Benceszalaiii's contact information. Any and all
                 copyrights to this video must be transfered to
                SZSZSZ. The dance featured in the video
+
                 must be based upon the instructions on how to perform
                 the Chicken Dance that you should have received with
                 this software.
@@ -59,6 +63,8 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+
 POSSIBILITY OF SUCH DAMAGE. SZSZSZ ACCEPTS NO LIABILITY FOR
+
 ANY INJURIES OR EXPENSES SUSTAINED IN THE ACT OF FULFILLING ANY OF
 THE ABOVE TERMS AND CONDITIONS, ACCIDENTAL OR OTHERWISE.
