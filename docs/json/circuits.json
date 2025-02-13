@@ -1,3 +1,338 @@
 {
-  
+    "1":{
+        "geo_id": "au-1953.geojson",
+        "circuit_name": "Albert Park Grand Prix Circuit",
+        "location": "Melbourne, Australia",
+        "race_start": "2025-03-14",
+        "race_end": "2025-03-16",
+        "length": "5.278 km",
+        "first_gp": "1996",
+        "turns": "14",
+        "laps": "58",
+        "race_distance": "306.124 km",
+        "lap_record": "1:19.813 - Charles Leclerc (2024)"
+    },
+
+    "2":{
+        "geo_id": "cn-2004.geojson",
+        "circuit_name": "Shanghai International Circuit",
+        "location": "Shanghai, China",
+        "race_start": "2025-03-21",
+        "race_end": "2025-03-23",
+        "length": "5.451 km",
+        "first_gp": "2004",
+        "turns": "16",
+        "laps": "56",
+        "race_distance": "305.066 km",
+        "lap_record": "1:32.238 - Michael Schumacher (2004)"
+    },
+
+    "3":{
+        "geo_id": "jp-1962.geojson",
+        "circuit_name": "Suzuka International Racing Course",
+        "location": "Suzuka, Japan",
+        "race_start": "2025-04-06",
+        "race_end": "2025-04-08",
+        "length": "5.807 km",
+        "first_gp": "1987",
+        "turns": "18",
+        "laps": "53",
+        "race_distance": "307.471 km",
+        "lap_record": "1:30.983 - Lewis Hamilton (2019)"
+    },
+
+    "4":{
+        "geo_id": "bh-2002.geojson",
+        "circuit_name": "Bahrain International Circuit",
+        "location": "Sakhir, Bahrain",
+        "race_start": "2025-04-11",
+        "race_end": "2025-04-13",
+        "length": "5.412 km",
+        "first_gp": "2004",
+        "turns": "15",
+        "laps": "57",
+        "race_distance": "308.238 km",
+        "lap_record": "1:31.447 - Pedro de la Rosa (2005)"
+    },
+
+    
+    "5":{
+        "geo_id": "sa-2021.geojson",
+        "circuit_name": "Jeddah Corniche Circuit",
+        "location": "Jeddah, Saudi Arabia",
+        "race_start": "2025-04-18",
+        "race_end": "2025-04-20",
+        "length": "6.174 km",
+        "first_gp": "2021",
+        "turns": "27",
+        "laps": "50",
+        "race_distance": "308.45 km",
+        "lap_record": "1:30.734 - Lewis Hamilton (2021)"
+    },
+
+    "6":{
+        "geo_id": "us-2022.geojson",
+        "circuit_name": "Miami International Autodrome",
+        "location": "Miami, United States",
+        "race_start": "2025-05-02",
+        "race_end": "2025-05-04",
+        "length": "5.412 km",
+        "first_gp": "2022",
+        "turns": "19",
+        "laps": "57",
+        "race_distance": "308.326 km",
+        "lap_record": "1:29.708 - Max Verstappen (2023)"
+    },
+
+    "7":{
+        "geo_id": "it-1953.geojson",
+        "circuit_name": "Autodromo Internazionale Enzo e Dino Ferrari",
+        "location": "Imola, Italy",
+        "race_start": "2025-05-16",
+        "race_end": "2025-05-18",
+        "length": "4.909 km",
+        "first_gp": "1980",
+        "turns": "19",
+        "laps": "63",
+        "race_distance": "309.049 km",
+        "lap_record": "1:15.484 - Lewis Hamilton (2020)"
+    },
+
+    "8":{
+        "geo_id": "mc-1929.geojson",
+        "circuit_name": "Circuit de Monaco",
+        "location": "Monte Carlo, Monaco",
+        "race_start": "2025-05-23",
+        "race_end": "2025-05-25",
+        "length": "3.337 km",
+        "first_gp": "1950",
+        "turns": "19",
+        "laps": "78",
+        "race_distance": "260.286 km",
+        "lap_record": "1:12.909 - Lewis Hamilton (2021)"
+    },
+
+    "9":{
+        "geo_id": "es-1990.geojson",
+        "circuit_name": "Circuit de Barcelona-Catalunya",
+        "location": "Barcelona, Spain",
+        "race_start": "2025-05-30",
+        "race_end": "2025-06-01",
+        "length": "4.657 km",
+        "first_gp": "1991",
+        "turns": "14",
+        "laps": "66",
+        "race_distance": "307.236 km",
+        "lap_record": "1:16.330 - Max Vesrtappen (2023)"
+    },
+
+    "10":{
+        "geo_id": "ca-1978.geojson",
+        "circuit_name": "Circuit Gilles-Villeneuve",
+        "location": "Montreal, Canada",
+        "race_start": "2025-06-13",
+        "race_end": "2025-06-15",
+        "length": "4.361 km",
+        "first_gp": "1978",
+        "turns": "14",
+        "laps": "70",
+        "race_distance": "305.27 km",
+        "lap_record": "1:13.078 - Valtteri Bottas (2019)"
+    },
+
+    "11":{
+        "geo_id": "at-1969.geojson",
+        "circuit_name": "Red Bull Ring",
+        "location": "Spielberg, Austria",
+        "race_start": "2025-06-27",
+        "race_end": "2025-06-29",
+        "length": "4.318 km",
+        "first_gp": "1970",
+        "turns": "10",
+        "laps": "71",
+        "race_distance": "306.452 km",
+        "lap_record": "1:05.619 - Carlos Sainz (2020)"
+    },
+
+    "12":{
+        "geo_id": "gb-1948.geojson",
+        "circuit_name": "Silverstone Circuit",
+        "location": "Silverstone, United Kingdom",
+        "race_start": "2025-07-04",
+        "race_end": "2025-07-06",
+        "length": "5.891 km",
+        "first_gp": "1950",
+        "turns": "18",
+        "laps": "52",
+        "race_distance": "306.198 km",
+        "lap_record": "1:27.097 - Max Vesrtappen (2020)"
+    },
+
+    "13":{
+        "geo_id": "be-1925.geojson",
+        "circuit_name": "Circuit de Spa-Francorchamps",
+        "location": "Stavelot, Belgium",
+        "race_start": "2025-07-25",
+        "race_end": "2025-07-27",
+        "length": "7.004 km",
+        "first_gp": "1950",
+        "turns": "19",
+        "laps": "44",
+        "race_distance": "308.052 km",
+        "lap_record": "1:44.701 - Sergio Perez (2024)"
+    },
+
+    "14":{
+        "geo_id": "hu-1986.geojson",
+        "circuit_name": "Hungaroring",
+        "location": "Mogyoród, Hungary",
+        "race_start": "2025-08-01",
+        "race_end": "2025-08-03",
+        "length": "4.381 km",
+        "first_gp": "1986",
+        "turns": "14",
+        "laps": "70",
+        "race_distance": "306.63 km",
+        "lap_record": "1:16.627 - Lewis Hamilton (2020)"
+    },
+
+    "15":{
+        "geo_id": "nl-1948.geojson",
+        "circuit_name": "Circuit Zandvoort",
+        "location": "Zandvoort, Netherlands",
+        "race_start": "2025-08-29",
+        "race_end": "2025-08-31",
+        "length": "4.259 km",
+        "first_gp": "1952",
+        "turns": "14",
+        "laps": "72",
+        "race_distance": "306.587 km",
+        "lap_record": "1:11.097 - Lewis Hamilton (2021)"
+    },
+
+    "16":{
+        "geo_id": "it-1922.geojson",
+        "circuit_name": "Autodromo Nazionale Monza",
+        "location": "Monza, Italy",
+        "race_start": "2025-09-05",
+        "race_end": "2025-09-07",
+        "length": "5.793 km",
+        "first_gp": "1950",
+        "turns": "11",
+        "laps": "53",
+        "race_distance": "306.72 km",
+        "lap_record": "1:21.046 - Rubens Barrichello (2004)"
+    },
+
+    "17":{
+        "geo_id": "az-2016.geojson",
+        "circuit_name": "Baku City Circuit",
+        "location": "Baku, Azerbaijan",
+        "race_start": "2025-09-19",
+        "race_end": "2025-09-21",
+        "length": "6.003 km",
+        "first_gp": "2016",
+        "turns": "20",
+        "laps": "51",
+        "race_distance": "306.049 km",
+        "lap_record": "1:43.009 - Charles Leclerc (2019)"
+    },
+
+    "18":{
+        "geo_id": "sg-2008.geojson",
+        "circuit_name": "Marina Bay Street Circuit",
+        "location": "Singapore, Singapore",
+        "race_start": "2025-10-03",
+        "race_end": "2025-10-05",
+        "length": "4.94 km",
+        "first_gp": "2008",
+        "turns": "19",  
+        "laps": "62",
+        "race_distance": "306.143 km",
+        "lap_record": "1:34.486 - Daniel Ricciardo (2024)"
+    },
+
+    "19":{
+        "geo_id": "us-2012.geojson",
+        "circuit_name": "Circuit of The Americas",
+        "location": "Austin, United States",
+        "race_start": "2025-10-17",
+        "race_end": "2025-10-19",
+        "length": "5.513 km",
+        "first_gp": "2012",
+        "turns": "20",  
+        "laps": "56",
+        "race_distance": "308.405 km",
+        "lap_record": "1:36.169 - Charles Leclerc (2019)"
+    },
+
+    "20":{
+        "geo_id": "mx-1962.geojson",
+        "circuit_name": "Autódromo Hermanos Rodríguez",
+        "location": "Mexico City, Mexico",
+        "race_start": "2025-10-24",
+        "race_end": "2025-10-26",
+        "length": "4.304 km",
+        "first_gp": "1963",
+        "turns": "17",  
+        "laps": "71",
+        "race_distance": "305.354 km",
+        "lap_record": "1:17.774 - Valterri Bottas (2021)"
+    },
+
+    "21":{
+        "geo_id": "br-1940.geojson",
+        "circuit_name": "Autódromo José Carlos Pace",
+        "location": "Sao Paulo, Brazil",
+        "race_start": "2025-11-07",
+        "race_end": "2025-11-09",
+        "length": "4.309 km",
+        "first_gp": "1973",
+        "turns": "15",  
+        "laps": "71",
+        "race_distance": "305.879 km",
+        "lap_record": "1:10.540 - Valterri Bottas (2018)"
+    },
+
+    "22":{
+        "geo_id": "us-2023.geojson",
+        "circuit_name": "Las Vegas Strip Circuit",
+        "location": "Las Vegas, United States",
+        "race_start": "2025-11-20",
+        "race_end": "2025-11-22",
+        "length": "6.201 km",
+        "first_gp": "2023",
+        "turns": "17",  
+        "laps": "50",
+        "race_distance": "309.958 km",
+        "lap_record": "1:34.876 - Lando Norris (2024)"
+    },
+
+    "23":{
+        "geo_id": "qa-2004.geojson",
+        "circuit_name": "Lusail International Circuit",
+        "location": "Lusail, Qatar",
+        "race_start": "2025-11-28",
+        "race_end": "2025-11-30",
+        "length": "5.419 km",
+        "first_gp": "2021",
+        "turns": "16",  
+        "laps": "57",
+        "race_distance": "308.611 km",
+        "lap_record": "1:22.384 - Lando Norris (2024)"
+    },
+
+    "24":{
+        "geo_id": "ae-2009.geojson",
+        "circuit_name": "Yas Marina Circuit",
+        "location": "Abu Dhabi, United Arab Emirates",
+        "race_start": "2025-12-05",
+        "race_end": "2025-12-07",
+        "length": "5.281 km",
+        "first_gp": "2009",
+        "turns": "16",  
+        "laps": "58",
+        "race_distance": "306.183 km",
+        "lap_record": "1:25.637 - Kevin Magnussen (2024)"
+    }
 }
