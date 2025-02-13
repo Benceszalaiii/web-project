@@ -3,49 +3,56 @@
 @tailwind utilities;
 
 
-  #navbar{
-    @apply p-12;
-  }
+#navbar {
+  @apply p-12;
+}
+
+.driver-card {
+  @apply w-[30vw] h-[70vh] border border-red-700 bg-slate-700 rounded-t-xl rounded-b-md
+}
+
+.nav-button {
+  @apply mr-4 overflow-hidden;
+}
+
+.f1-image {
+  @apply h-10;
+}
+
+:root {
+  --foreground: #f23;
+  --background: #000;
+  --nav-button-bg: #0000;
 
   .nav-button {
-    @apply mr-4 overflow-hidden;
+    @apply max-h-12;
+
+    --hover-bg: #e31f1f;
+    --hover-text: #fff;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--nav-button-bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--nav-button-bg);
+    transition: 0.2s;
   }
 
-  .f1-image {
-    @apply h-10;
+  .nav-button:hover {
+    color: var(--hover-text);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--nav-button-bg);
+
   }
 
-  :root {
-    --foreground: #f23;
-    --background: #000;
-    --nav-button-bg: #0000;
-
-    .nav-button{
-      @apply max-h-12;
-
-      --hover-bg: #e31f1f;
-      --hover-text: #fff;
-      color: #fff;
-      cursor: pointer;
-      border: 1px solid var(--nav-button-bg);
-      border-radius: 4px;
-      padding: 0.8em 2em;
-      background: var(--nav-button-bg);
-      transition: 0.2s;
-    }
-    .nav-button:hover{
-      color: var(--hover-text);
-      background: var(--hover-bg);
-      box-shadow: 0.25rem 0.25rem var(--nav-button-bg);
-
-    }
-    .nav-button:active{
-      transform: translate(0);
-      box-shadow: none;
-    }
-    button {
-      text-decoration: none;
-      border: none;
-      background-color: transparent;
-    }
+  .nav-button:active {
+    transform: translate(0);
+    box-shadow: none;
   }
+
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
+}
