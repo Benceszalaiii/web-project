@@ -27,3 +27,30 @@ function drawDriverCard(data, side) {
     document.getElementById(side).innerHTML = "\n  <div>\n    <h2 class=\"font-semibold text-red-500\">".concat(data.full_name, "</h2>\n  </div>\n\n  ");
 }
 window.addEventListener("scroll", scrollHandler);
+
+
+    async function loadDrivers() {
+        try {
+          const response = await fetch('./json/drivers.json');
+          const data = await response.json();
+          
+          const driver1Select = document.getElementById('driver1');
+          const driver2Select = document.getElementById('driver2');
+  
+          function populateDropdown(dropdown, drivers) {
+            drivers.forEach(driver => {
+              const option = document.createElement('option');
+              option.value = driver.driver_id;
+              option.textContent = driver.full_name;
+              dropdown.appendChild(option);
+            });
+          }
+  
+          populateDropdown(driver1Select, data.drivers);
+          populateDropdown(driver2Select, data.drivers);
+        } catch (error) {
+          console.error("Error loading drivers data:", error);
+        }
+      }
+  
+      loadDrivers();
