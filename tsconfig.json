@@ -1,4 +1,4 @@
-﻿{
+{
   "compilerOptions": {
     "target": "es6",
     "module": "Node16",
@@ -9,10 +9,12 @@
     "sourceMap": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
-    "declaration": true
+    "declaration": true,
+    "types": ["tailwindcss"]
   },
   "include": [
-    "./**/*.ts"
+    "./**/*.ts",
+    "tailwindcss"
   ],
   "exclude": [
     "src/**/*.spec.ts",
