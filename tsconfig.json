@@ -1,20 +1,20 @@
 {
   "compilerOptions": {
+    "strict": true,
     "target": "es6",
     "module": "Node16",
     "moduleResolution": "node16",
     "noImplicitAny": false,
     "removeComments": true,
     "preserveConstEnums": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist",
+    "outDir": "./js/",
     "declaration": true,
     "types": ["tailwindcss"]
   },
   "include": [
-    "./**/*.ts",
-    "tailwindcss"
+    "./js/*.ts"
   ],
   "exclude": [
     "src/**/*.spec.ts",

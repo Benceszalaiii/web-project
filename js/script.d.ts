@@ -12,4 +12,5 @@ declare enum Side {
 }
 export declare function getDriverById(id: number, side: Side): void;
 export declare function drawDriverCard(data: DriverLocal, side: Side): void;
+export declare function loadDrivers(): Promise<void>;
 export {};
