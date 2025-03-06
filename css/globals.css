@@ -57,5 +57,9 @@
     border: none;
     background-color: transparent;
   }
+  .dropdown-container {
+    color: black;
+    
+  }
 }
 
