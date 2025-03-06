@@ -36,15 +36,11 @@
     <section class="flex flex-col items-center gap-6 mb-8 w-full">
       <div class="dropdown-container">
         <label for="driver1">Select Driver 1:</label>
-        <select id="driver1">
-          <option value="">--Select a Driver--</option>
-        </select>
+        <select id="driver1"></select>
       </div>
       <div class="dropdown-container">
         <label for="driver2">Select Driver 2:</label>
-        <select id="driver2">
-          <option value="">--Select a Driver--</option>
-        </select>
+        <select id="driver2"></select>
       </div>
     </section>
 
@@ -56,7 +52,16 @@
     <section class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4 w-full">
       <article class="driver-card bg-red-500" id="left"></article>
       <article class="driver-card bg-red-500" id="right"></article>
+      <article class="driver-card" id="left">Select a driver</article>
     </section>
+  <main class="h-[150vh] font-semibold whitespace-pre flex justify-center items-start text-center w-full">
+    <button onclick="getDriverById(4, Side.LEFT)">click click</button>
+  </main>
+    <section class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4  w-full">
+      <article class="driver-card" id="right">Select a driver</article>
+    </section>
+  <main class="h-[150vh] font-semibold whitespace-pre flex justify-center items-start text-center w-full">
+    <button onclick="getDriverById(44, Side.RIGHT)">click lclick</button>
   </main>
 
   <footer class="h-16 bg-neutral-900 w-full flex items-center justify-center">
