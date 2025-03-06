@@ -47,21 +47,21 @@
         </select>
       </div>
     </section>
-    
-    
-  <main class="h-[150vh] font-semibold whitespace-pre flex justify-center items-start text-center w-full">
-    <button onclick="getDriverById(23, Side.RIGHT)">click lclick</button>
-    <section class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4  w-full">
+
+    <section class="flex flex-col items-center gap-4 w-full">
+      <button onclick="getDriverById(23, Side.LEFT)">click lclick</button>
+      <button onclick="getDriverById(23, Side.RIGHT)">click lclick</button>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4 w-full">
       <article class="driver-card bg-red-500" id="left"></article>
-      <article class="driver-card" id="right"></article>
+      <article class="driver-card bg-red-500" id="right"></article>
     </section>
   </main>
 
   <footer class="h-16 bg-neutral-900 w-full flex items-center justify-center">
-    <p>Built by <a href="https://www.github.com/benceszalaiii/web-project" class="underline transition-all duration-300 hover:underline-offset-4 underline-offset-2 text-gray-200 font-bold">SZSZSZ</a>
-    </p>
+    <p>Built by <a href="https://www.github.com/benceszalaiii/web-project" class="underline transition-all duration-300 hover:underline-offset-4 underline-offset-2 text-gray-200 font-bold">SZSZSZ</a></p>
   </footer>
-
 </body>
 
 </html>
