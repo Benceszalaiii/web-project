@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>F1 Data</title>
   <link rel="stylesheet" href="./css/output.css" />
+  <script src="./js/circuits.js"></script>
   <script>var exports = {}</script>
 </head>
 
@@ -17,56 +17,50 @@
       <img src="./images/F1_Stats_logo_de_feher.png" alt="F1 Logo" class="f1-image" />
     </a>
     <ul class="flex gap-4 h-16 self-right flex-row nav-ul">
-      <button>
-        <a class="nav-button" href="drivers.html"><span>Drivers</span></a>
-      </button>
-      <button>
-        <a class="nav-button" href="circuits.html"><span>Circuits</span></a>
-      </button>
-      <button>
-        <a class="nav-button" href="github.html"><span>GitHub</span></a>
-      </button>
-      <button>
-        <a class="nav-button" href="team.html"><span>Our Team</span></a>
-      </button>
+      <button><a class="nav-button" href="drivers.html"><span>Drivers</span></a></button>
+      <button><a class="nav-button" href="circuits.html"><span>Circuits</span></a></button>
+      <button><a class="nav-button" href="github.html"><span>GitHub</span></a></button>
+      <button><a class="nav-button" href="team.html"><span>Our Team</span></a></button>
     </ul>
   </nav>
 
-  <main class="h-[150vh] font-semibold whitespace-pre flex flex-col justify-center items-center text-center w-full">
-    <section class="flex flex-col items-center gap-6 mb-8 w-full">
+  <main class="flex justify-between items-start w-full h-[100vh]">
+    <section class="flex flex-col gap-6 p-8 w-1/4">
       <div class="dropdown-container">
         <label for="driver1">Select Driver 1:</label>
-        <select id="driver1"></select>
+        <select id="driver1">
+          <option value="">-- Select a driver --</option>
+        </select>
       </div>
       <div class="dropdown-container">
         <label for="driver2">Select Driver 2:</label>
-        <select id="driver2"></select>
+        <select id="driver2">
+          <option value="">-- Select a driver --</option>
+        </select>
       </div>
     </section>
 
-    <section class="flex flex-col items-center gap-4 w-full">
-      <button onclick="getDriverById(23, Side.LEFT)">click lclick</button>
-      <button onclick="getDriverById(23, Side.RIGHT)">click lclick</button>
+    <section class="flex gap-[50px] p-8 w-3/4">
+      <article class="driver-card w-1/2 bg-gray-800 p-4 rounded-lg shadow-lg text-center" id="left">
+        <p>Select a driver</p>
+      </article>
+      <article class="driver-card w-1/2 bg-gray-800 p-4 rounded-lg shadow-lg text-center" id="right">
+        <p>Select a driver</p>
+      </article>
     </section>
-
-    <section class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4 w-full">
-      <article class="driver-card bg-red-500" id="left"></article>
-      <article class="driver-card bg-red-500" id="right"></article>
-      <article class="driver-card" id="left">Select a driver</article>
-    </section>
-  <main class="h-[150vh] font-semibold whitespace-pre flex justify-center items-start text-center w-full">
-    <button onclick="getDriverById(4, Side.LEFT)">click click</button>
-  </main>
-    <section class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4  w-full">
-      <article class="driver-card" id="right">Select a driver</article>
-    </section>
-  <main class="h-[150vh] font-semibold whitespace-pre flex justify-center items-start text-center w-full">
-    <button onclick="getDriverById(44, Side.RIGHT)">click lclick</button>
   </main>
 
   <footer class="h-16 bg-neutral-900 w-full flex items-center justify-center">
-    <p>Built by <a href="https://www.github.com/benceszalaiii/web-project" class="underline transition-all duration-300 hover:underline-offset-4 underline-offset-2 text-gray-200 font-bold">SZSZSZ</a></p>
+    <p>Built by 
+      <a href="https://www.github.com/benceszalaiii/web-project" 
+         class="underline transition-all duration-300 hover:underline-offset-4 underline-offset-2 text-gray-200 font-bold">
+         SZSZSZ
+      </a>
+    </p>
   </footer>
-</body>
 
+  <!-- Load drivers.js at the end -->
+  <script src="./js/drivers.js"></script>
+
+</body>
 </html>
