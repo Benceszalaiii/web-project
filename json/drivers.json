@@ -9,10 +9,15 @@
          "country": "Netherlands",
          "birth_date": "1997-09-30",
          "race_starts": "209",
+         "pole_positions": "40",
          "points_scored": "3023.5",
          "wins": "63",
          "podiums": "112",
-         "world_championships": "1"
+         "world_championships": "1",
+         "retirements": "32",
+         "first_gp": "2015-03-15, Spanish Grand Prix",
+         "best_finish": "1st, 63x",
+         "avarage_finish": "3.69"
       },
       {
          "driver_id": "81",
@@ -23,10 +28,15 @@
          "country": "Australia",
          "birth_date": "2001-04-06",
          "race_starts": "46",
+         "pole_positions": "0",
          "points_scored": "389",
          "wins": "2",
          "podiums": "10",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "3",
+         "first_gp": "2021-03-28, Bahrain Grand Prix",
+         "best_finish": "1st, 2x",
+         "avarage_finish": "7.12"
       },
       {
          "driver_id": "4",
@@ -37,10 +47,15 @@
          "country": "United Kingdom",
          "birth_date": "1999-11-13",
          "race_starts": "128",
+         "pole_positions": "9",
          "points_scored": "1007",
          "wins": "4",
          "podiums": "26",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "12",
+         "first_gp": "2019-03-17, Australian Grand Prix",
+         "best_finish": "1st, 4x",
+         "avarage_finish": "7.05"
       },
       {
          "driver_id": "16",
@@ -51,10 +66,15 @@
          "country": "Monaco",
          "birth_date": "1997-10-16",
          "race_starts": "147",
+         "pole_positions": "26",
          "points_scored": "1430",
          "wins": "8",
          "podiums": "43",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "21",
+         "first_gp": "2018-03-25, Australian Grand Prix",
+         "best_finish": "1st, 8x",
+         "avarage_finish": "5.58"
       },
       {
          "driver_id": "44",
@@ -65,10 +85,15 @@
          "country": "United Kingdom",
          "birth_date": "1985-01-07",
          "race_starts": "356",
+         "pole_positions": "104",
          "points_scored": "4862.5",
          "wins": "105",
          "podiums": "202",
-         "world_championships": "7"
+         "world_championships": "7",
+         "retirements": "32",
+         "first_gp": "2007-03-18, Australian Grand Prix",
+         "best_finish": "1st, 105x",
+         "avarage_finish": "3.64"
       },
       {
          "driver_id": "30",
@@ -79,10 +104,15 @@
          "country": "New Zealand",
          "birth_date": "2002-10-11",
          "race_starts": "11",
+         "pole_positions": "0",
          "points_scored": "6",
          "wins": "0",
          "podiums": "0",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "1",
+         "first_gp": "2022-03-20, Bahrain Grand Prix",
+         "best_finish": "9th, 3x",
+         "avarage_finish": "12.91"
       },
       {
          "driver_id": "63",
@@ -93,10 +123,15 @@
          "country": "United Kingdom",
          "birth_date": "1998-02-15",
          "race_starts": "128",
+         "pole_positions": "5",
          "points_scored": "714",
          "wins": "3",
          "podiums": "15",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "19",
+         "first_gp": "2019-03-31, Bahrain Grand Prix",
+         "best_finish": "1st, 3x",
+         "avarage_finish": "9.44"
       },
       {
          "driver_id": "12",
@@ -107,9 +142,14 @@
          "country": "Italy",
          "birth_date": "2006-08-25",
          "race_starts": "0",
+         "pole_positions": "0",
          "wins": "0",
          "podiums": "0",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "0",
+         "first_gp": "2025-03-16, Australian Grand Prix",
+         "best_finish": "N/A",
+         "avarage_finish": "N/A"
       },
       {
          "driver_id": "18",
@@ -120,10 +160,15 @@
          "country": "Canada",
          "birth_date": "1998-10-29",
          "race_starts": "166",
+         "pole_positions": "1",
          "points_scored": "292",
          "wins": "0",
          "podiums": "3",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "29",
+         "first_gp": "2017-03-26, Australian Grand Prix",
+         "best_finish": "3rd, 3x",
+         "avarage_finish": "11.29"
       },
       {
          "driver_id": "14",
@@ -134,10 +179,15 @@
          "country": "Spain",
          "birth_date": "1981-07-29",
          "race_starts": "401",
+         "pole_positions": "22",
          "points_scored": "2337",
          "wins": "32",
          "podiums": "106",
-         "world_championships": "2"
+         "world_championships": "2",
+         "retirements": "77",
+         "first_gp": "2001-03-04, Australian Grand Prix",
+         "best_finish": "1st, 32x",
+         "avarage_finish": "6.46"
       },
       {
          "driver_id": "10",
@@ -148,10 +198,15 @@
          "country": "France",
          "birth_date": "1996-02-07",
          "race_starts": "153",
+         "pole_positions": "0",
          "points_scored": "436",
          "wins": "1",
          "podiums": "5",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "24",
+         "first_gp": "2017-05-14, Spanish Grand Prix",
+         "best_finish": "1st",
+         "avarage_finish": "10.09"
       },
       {
          "driver_id": "17",
@@ -162,10 +217,15 @@
          "country": "Australia",
          "birth_date": "2003-01-20",
          "race_starts": "0",
+         "pole_positions": "0",
          "points_scored": "0",
          "wins": "0",
          "podiums": "0",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "0",
+         "first_gp": "2025-03-16, Australian Grand Prix",
+         "best_finish": "N/A",
+         "avarage_finish": "N/A"
       },
       {
          "driver_id": "6",
@@ -176,10 +236,15 @@
          "country": "France",
          "birth_date": "2004-09-28",
          "race_starts": "0",
+         "pole_positions": "0",
          "points_scored": "0",
          "wins": "0",
          "podiums": "0",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "0",
+         "first_gp": "2025-03-16, Australian Grand Prix",
+         "best_finish": "N/A",
+         "avarage_finish": "N/A"
       },
       {
          "driver_id": "22",
@@ -190,10 +255,15 @@
          "country": "Japan",
          "birth_date": "2000-05-11",
          "race_starts": "87",
+         "pole_positions": "0",
          "points_scored": "91",
          "wins": "0",
          "podiums": "0",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "14",
+         "first_gp": "2021-03-28, Bahrain Grand Prix",
+         "best_finish": "4th",
+         "avarage_finish": "12.27"
       },
       {
          "driver_id": "31",
@@ -204,10 +274,15 @@
          "country": "France",
          "birth_date": "1996-09-17",
          "race_starts": "156",
+         "pole_positions": "0",
          "points_scored": "445",
          "wins": "1",
          "podiums": "4",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "24",
+         "first_gp": "2016-08-28, Belgian Grand Prix",
+         "best_finish": "1st",
+         "avarage_finish": "9.95"
       },
       {
          "driver_id": "87",
@@ -218,10 +293,15 @@
          "country": "United Kingdom",
          "birth_date": "2004-05-08",
          "race_starts": "3",
+         "pole_positions": "0",
          "points_scored": "7",
          "wins": "0",
          "podiums": "0",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "0",
+         "first_gp": "2024-03-09, Saudi Arabian Grand Prix",
+         "best_finish": "7th",
+         "avarage_finish": "9.67"
       },
       {
          "driver_id": "23",
@@ -232,10 +312,15 @@
          "country": "Thailand",
          "birth_date": "1996-03-23",
          "race_starts": "104",
+         "pole_positions": "0",
          "points_scored": "240",
          "wins": "0",
          "podiums": "2",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "18",
+         "first_gp": "2019-03-17, Australian Grand Prix",
+         "best_finish": "3rd, 2x",
+         "avarage_finish": "10.61"
       },
       {
          "driver_id": "55",
@@ -246,10 +331,15 @@
          "country": "Spain",
          "birth_date": "1994-09-01",
          "race_starts": "206",
+         "pole_positions": "6",
          "points_scored": "1272.5",
          "wins": "4",
          "podiums": "27",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "38",
+         "first_gp": "2015-03-15, Australian Grand Prix",
+         "best_finish": "1st, 4x",
+         "avarage_finish": "7.3"
       },
       {
          "driver_id": "27",
@@ -260,10 +350,15 @@
          "country": "Germany",
          "birth_date": "1987-08-19",
          "race_starts": "227",
+         "pole_positions": "1",
          "points_scored": "571",
          "wins": "0",
          "podiums": "0",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "42",
+         "first_gp": "2010-08-29, Belgian Grand Prix",
+         "best_finish": "4th, 3x",
+         "avarage_finish": "10.26"
       },
       {
          "driver_id": "5",
@@ -274,10 +369,15 @@
          "country": "Brazil",
          "birth_date": "2004-10-14",
          "race_starts": "0",
+         "pole_positions": "0",
          "points_scored": "0",
          "wins": "0",
          "podiums": "0",
-         "world_championships": "0"
+         "world_championships": "0",
+         "retirements": "0",
+         "first_gp": "2025-03-16, Australian Grand Prix",
+         "best_finish": "N/A",
+         "avarage_finish": "N/A"
       }
    ]
 }
