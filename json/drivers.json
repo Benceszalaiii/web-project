@@ -147,10 +147,10 @@
          "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/P/PIEGAS01_Pierre_Gasly/piegas01.png",
          "country": "France",
          "birth_date": "1996-02-07",
-         "race_starts": "128",
-         "points_scored": "292",
-         "wins": "0",
-         "podiums": "3",
+         "race_starts": "153",
+         "points_scored": "436",
+         "wins": "1",
+         "podiums": "5",
          "world_championships": "0"
       },
       {
@@ -158,63 +158,126 @@
          "full_name": "Jack Doohan",
          "name_acronym": "DOO",
          "team": "Alpine",
-         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/J/JACDOO01_Jack_Doohan/jacdoo01.png"
+         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/J/JACDOO01_Jack_Doohan/jacdoo01.png",
+         "country": "Australia",
+         "birth_date": "2003-01-20",
+         "race_starts": "0",
+         "points_scored": "0",
+         "wins": "0",
+         "podiums": "0",
+         "world_championships": "0"
       },
       {
          "driver_id": "6",
          "full_name": "Isack Hadjar",
          "name_acronym": "HAD",
          "team": "Racing BUll",
-         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/I/ISAHAD01_Isack_Hadjar/isahad01.png"
+         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/I/ISAHAD01_Isack_Hadjar/isahad01.png",
+         "country": "France",
+         "birth_date": "2004-09-28",
+         "race_starts": "0",
+         "points_scored": "0",
+         "wins": "0",
+         "podiums": "0",
+         "world_championships": "0"
       },
       {
          "driver_id": "22",
          "full_name": "Yuki Tsunoda",
          "name_acronym": "TSU",
          "team": "AlphaTauri",
-         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/Y/YUKTSU01_Yuki_Tsunoda/yuktsu01.png"
+         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/Y/YUKTSU01_Yuki_Tsunoda/yuktsu01.png",
+         "country": "Japan",
+         "birth_date": "2000-05-11",
+         "race_starts": "87",
+         "points_scored": "91",
+         "wins": "0",
+         "podiums": "0",
+         "world_championships": "0"
       },
       {
          "driver_id": "31",
          "full_name": "Esteban Ocon",
          "name_acronym": "OCO",
          "team": "Alpine",
-         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/E/ESTOCO01_Esteban_Ocon/estoco01.png"
+         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/E/ESTOCO01_Esteban_Ocon/estoco01.png",
+         "country": "France",
+         "birth_date": "1996-09-17",
+         "race_starts": "156",
+         "points_scored": "445",
+         "wins": "1",
+         "podiums": "4",
+         "world_championships": "0"
       },
       {
          "driver_id": "87",
          "full_name": "Oliver Bearman",
          "name_acronym": "BEA",
          "team": "Haas",
-         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OLIBEA01_Oliver_Bearman/olibea01.png"
+         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OLIBEA01_Oliver_Bearman/olibea01.png",
+         "country": "United Kingdom",
+         "birth_date": "2004-05-08",
+         "race_starts": "3",
+         "points_scored": "7",
+         "wins": "0",
+         "podiums": "0",
+         "world_championships": "0"
       },
       {
          "driver_id": "23",
          "full_name": "Alexander Albon",
          "name_acronym": "ALB",
          "team": "Williams",
-         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ALEALB01_Alexander_Albon/alealb01.png"
+         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ALEALB01_Alexander_Albon/alealb01.png",
+         "country": "Thailand",
+         "birth_date": "1996-03-23",
+         "race_starts": "104",
+         "points_scored": "240",
+         "wins": "0",
+         "podiums": "2",
+         "world_championships": "0"
       },
       {
          "driver_id": "55",
          "full_name": "Carlos Sainz",
          "name_acronym": "SAI",
          "team": "Williams",
-         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png"
+         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png",
+         "country": "Spain",
+         "birth_date": "1994-09-01",
+         "race_starts": "206",
+         "points_scored": "1272.5",
+         "wins": "4",
+         "podiums": "27",
+         "world_championships": "0"
       },
       {
          "driver_id": "27",
          "full_name": "Nico Hulkenberg",
          "name_acronym": "HUL",
          "team": "Kick Sauber",
-         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png"
+         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png",
+         "country": "Germany",
+         "birth_date": "1987-08-19",
+         "race_starts": "227",
+         "points_scored": "571",
+         "wins": "0",
+         "podiums": "0",
+         "world_championships": "0"
       },
       {
          "driver_id": "5",
          "full_name": "Gabriel Bortoleto",
          "name_acronym": "BOR",
          "team": "Kick Sauber",
-         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png"
+         "headshot_url": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png",
+         "country": "Brazil",
+         "birth_date": "2004-10-14",
+         "race_starts": "0",
+         "points_scored": "0",
+         "wins": "0",
+         "podiums": "0",
+         "world_championships": "0"
       }
    ]
 }
