@@ -1,66 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>F1 Data</title>
-  <link rel="stylesheet" href="./css/output.css" />
-  <script src="./js/circuits.js"></script>
-  <script>var exports = {}</script>
-</head>
+<html color-scheme="dark" class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Data</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <script>
+      var exports = {};
+    </script>
+  </head>
 
-<body class="bg-neutral-950 text-slate-100 ">
-  <script src="./js/script.js"></script>
+  <body class="bg-neutral-950 text-slate-100">
+    <script src="./js/script.js"></script>
 
-  <nav id="navbar" class="flex flex-row mb-8 h-24 transition-colors duration-500 sticky top-0 backdrop-blur-lg items-center space-between text-white justify-between p-4">
-    <a class="md:pl-6" href="index.html">
-      <img src="./images/F1_Stats_logo_de_feher.png" alt="F1 Logo" class="f1-image" />
-    </a>
-    <ul class="flex gap-4 h-16 self-right flex-row nav-ul">
-      <button><a class="nav-button" href="drivers.html"><span>Drivers</span></a></button>
-      <button><a class="nav-button" href="circuits.html"><span>Circuits</span></a></button>
-      <button><a class="nav-button" href="github.html"><span>GitHub</span></a></button>
-      <button><a class="nav-button" href="team.html"><span>Our Team</span></a></button>
-    </ul>
-  </nav>
-
-  <main class="flex justify-between items-start w-full h-[100vh]">
-    <section class="flex flex-col gap-6 p-8 w-1/4">
-      <div class="dropdown-container">
-        <label for="driver1">Select Driver 1:</label>
-        <select id="driver1">
-          <option value="">-- Select a driver --</option>
-        </select>
-      </div>
-      <div class="dropdown-container">
-        <label for="driver2">Select Driver 2:</label>
-        <select id="driver2">
-          <option value="">-- Select a driver --</option>
-        </select>
-      </div>
-    </section>
-
-    <section class="flex gap-[50px] p-8 w-3/4">
-      <article class="driver-card w-1/2 bg-gray-800 p-4 rounded-lg shadow-lg text-center" id="left">
-        <p>Select a driver</p>
-      </article>
-      <article class="driver-card w-1/2 bg-gray-800 p-4 rounded-lg shadow-lg text-center" id="right">
-        <p>Select a driver</p>
-      </article>
-    </section>
-  </main>
-
-  <footer class="h-16 bg-neutral-900 w-full flex items-center justify-center">
-    <p>Built by 
-      <a href="https://www.github.com/benceszalaiii/web-project" 
-         class="underline transition-all duration-300 hover:underline-offset-4 underline-offset-2 text-gray-200 font-bold">
-         SZSZSZ
+    <nav
+      id="navbar"
+      class="flex flex-row mb-8 h-24 transition-colors duration-500 sticky top-0 backdrop-blur-lg items-center space-between text-white justify-between p-4"
+    >
+      <a class="md:pl-6" href="index.html">
+        <img
+          src="./images/F1_Stats_logo_de_feher.png"
+          alt="F1 Logo"
+          class="f1-image"
+        />
       </a>
-    </p>
-  </footer>
+      <ul class="flex gap-4 h-16 self-right flex-row nav-ul">
+        <button>
+          <a class="nav-button" href="drivers.html"><span>Drivers</span></a>
+        </button>
+        <button>
+          <a class="nav-button" href="circuits.html"><span>Circuits</span></a>
+        </button>
+        <button>
+          <a class="nav-button" href="github.html"><span>GitHub</span></a>
+        </button>
+        <button>
+          <a class="nav-button" href="team.html"><span>Our Team</span></a>
+        </button>
+      </ul>
+    </nav>
 
-  <!-- Load drivers.js at the end -->
-  <script src="./js/drivers.js"></script>
+    <main class="grid grid-cols-1 place-items-center w-full min-h-screen">
+      <section class="flex gap-[50px] p-8 w-3/4">
+        <article
+          class="driver-card w-1/2 bg-gray-800 p-4 rounded-lg shadow-lg text-center"
+        > 
+          <select id="driver1" class="">
+            <option value="">-- Select a driver --</option>
+          </select>
+          <div id="left"></div>
+        </article>
+        <article
+          class="driver-card w-1/2 bg-gray-800 p-4 rounded-lg shadow-lg text-center"
+        >
+          <select id="driver2" class="bg-slate-900 ring-red-800 border-slate-900 outline-slate-900 placeholder-red-600">
+            <option value="" class="bg-slate-900">-- Select a driver --</option>
+          </select>
+          <div id="right"></div>
+        </article>
+      </section>
+    </main>
 
-</body>
+    <footer class="h-16 bg-neutral-900 w-full flex items-center justify-center">
+      <p>
+        Built by
+        <a
+          href="https://www.github.com/benceszalaiii/web-project"
+          class="underline transition-all duration-300 hover:underline-offset-4 underline-offset-2 text-gray-200 font-bold"
+        >
+          SZSZSZ
+        </a>
+      </p>
+    </footer>
+
+    <!-- Load drivers.js at the end -->
+    <script src="./js/drivers.js"></script>
+  </body>
 </html>

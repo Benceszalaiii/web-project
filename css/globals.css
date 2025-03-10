@@ -2,13 +2,12 @@
 @import "tailwindcss/preflight";
 @tailwind utilities;
 
-
 #navbar {
   @apply p-12;
 }
 
 .driver-card {
-  @apply w-[30vw] h-[70vh] border border-red-700 bg-slate-700 rounded-t-xl rounded-b-md
+  @apply w-[30vw] h-[70vh] border border-red-700 bg-slate-700 rounded-t-xl rounded-b-md;
 }
 
 .nav-button {
@@ -41,9 +40,7 @@
     color: var(--hover-text);
     background: var(--hover-bg);
     box-shadow: 0.25rem 0.25rem var(--nav-button-bg);
-
   }
-
 
   .nav-button:active {
     transform: translate(0);
@@ -57,9 +54,9 @@
     border: none;
     background-color: transparent;
   }
-  .dropdown-container {
-    color: black;
-    
+  select {
+    background-color: var(--color-slate-900);
+    padding: 2px;
+    rounded: 5px;
   }
 }
-
