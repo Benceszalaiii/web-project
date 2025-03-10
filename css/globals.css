@@ -7,7 +7,7 @@
 }
 
 .driver-card {
-  @apply w-[30vw] h-[70vh] border border-red-700 bg-slate-700 rounded-t-xl rounded-b-md;
+  @apply w-[30vw] h-[70vh] border border-red-700 bg-slate-900 rounded-t-xl rounded-b-md;
 }
 
 .nav-button {
@@ -56,7 +56,7 @@
   }
   select {
     background-color: var(--color-slate-900);
-    padding: 2px;
-    rounded: 5px;
+    padding:8px;
+    @apply rounded-t-xl py-2 font-semibold w-full text-center border-b border-slate-800;
   }
 }

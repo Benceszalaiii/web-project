@@ -570,9 +570,6 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-3\/4 {
-    width: calc(3/4 * 100%);
-  }
   .w-full {
     width: 100%;
   }
@@ -903,7 +900,7 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
   border-style: var(--tw-border-style);
   border-width: 1px;
   border-color: var(--color-red-700);
-  background-color: var(--color-slate-700);
+  background-color: var(--color-slate-900);
 }
 .nav-button {
   margin-right: calc(var(--spacing) * 4);
@@ -947,8 +944,17 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
   }
   select {
     background-color: var(--color-slate-900);
-    padding: 2px;
-    rounded: 5px;
+    padding: 8px;
+    width: 100%;
+    border-top-left-radius: var(--radius-xl);
+    border-top-right-radius: var(--radius-xl);
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+    border-color: var(--color-slate-800);
+    padding-block: calc(var(--spacing) * 2);
+    text-align: center;
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
 }
 @keyframes spin {

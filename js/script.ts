@@ -25,11 +25,56 @@ enum Side {
   RIGHT = "right"
 }
 
-export function getDriverById(id: number, side: Side) {
-  fetch(`../json/drivers.json`).then(response => response.json()).then((data) => {
-    const driver: DriverLocal = data.drivers.find((i) => i.driver_id == id);
-    drawDriverCard(driver, side)
-  });
+
+
+interface DriverData {
+  driver_number: number;
+  broadcast_name: string;
+  full_name: string;
+  name_acronym: string;
+  team_name: string;
+  team_colour: string;
+  first_name: string;
+  last_name: string;
+  headshot_url: string;
+  country_code: string;
+  session_key: number;
+  meeting_key: number;
+}
+
+
+export async function getSessionByDriver(driver: DriverData){
+  const res = await fetch(``);
+}
+
+export async function getDriverById(driverId: number){
+  const res = await fetch(`https://api.openf1.org/v1/drivers?driver_number=${driverId}&session_key=9158`)
+  const driver: DriverData = await res.json();
+  if (!driver){
+    throw new Error("Driver not found by driver id");
+  }
+  
+}
+
+
+export async function updateDriverCard(dropdown, card) {
+  const response = await fetch("json/drivers.json");
+  const data = await response.json();
+  const drivers = data.drivers;
+  const selectedDriver = drivers.find(
+    (driver) => driver.driver_id === dropdown.value
+  );
+  if (selectedDriver) {
+    card.innerHTML = `
+      <div class="flex items-center w-full justify-center">
+      <img src="${selectedDriver.headshot_url}" alt="${selectedDriver.full_name}" class="size-48 mt-2 rounded-lg mx-auto" />
+      </div>
+      <h2 class="text-4xl font-semibold">${selectedDriver.full_name} (${selectedDriver.name_acronym})</h2>
+      <p><strong>Team:</strong> ${selectedDriver.team}</p>
+      `;
+  } else {
+    card.innerHTML = "Select a driver";
+  }
 }
 
 export function drawDriverCard(data: DriverLocal, side: Side) {
