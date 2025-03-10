@@ -57,12 +57,12 @@ export async function getDriverById(driverId: number){
 }
 
 
-export async function updateDriverCard(dropdown, card) {
+export async function updateDriverCard(dropdown: HTMLSelectElement, card: HTMLElement) {
   const response = await fetch("json/drivers.json");
   const data = await response.json();
   const drivers = data.drivers;
   const selectedDriver = drivers.find(
-    (driver) => driver.driver_id === dropdown.value
+    (driver) => driver.driver_id === parseInt(dropdown.value, 10)
   );
   if (selectedDriver) {
     card.innerHTML = `
@@ -75,6 +75,7 @@ export async function updateDriverCard(dropdown, card) {
   } else {
     card.innerHTML = "Select a driver";
   }
+}
 }
 
 export function drawDriverCard(data: DriverLocal, side: Side) {
