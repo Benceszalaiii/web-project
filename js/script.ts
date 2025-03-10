@@ -76,7 +76,6 @@ export async function updateDriverCard(dropdown: HTMLSelectElement, card: HTMLEl
     card.innerHTML = "Select a driver";
   }
 }
-}
 
 export function drawDriverCard(data: DriverLocal, side: Side) {
   const sideElement = document.getElementById(side);
