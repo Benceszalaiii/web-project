@@ -51,6 +51,17 @@ document.addEventListener("DOMContentLoaded", async () => {
           }
         })
       })
+      
+
+      setInterval(()=>{
+        fetch(`https://api.openf1.org/v1/car_data?driver_id=${selectedDriver.driver_id}&session_key=9159`)
+          .then(response => response.json())
+          .then(jsonContent => {
+            card.innerHTML += `
+            <p>${jsonContent}</p>
+            `
+          });
+      }, 1000)
     }
     }
 
