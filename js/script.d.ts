@@ -26,6 +26,6 @@ interface DriverData {
 }
 export declare function getSessionByDriver(driver: DriverData): Promise<void>;
 export declare function getDriverById(driverId: number): Promise<void>;
-export declare function updateDriverCard(dropdown: any, card: any): Promise<void>;
+export declare function updateDriverCard(dropdown: HTMLSelectElement, card: HTMLElement): Promise<void>;
 export declare function drawDriverCard(data: DriverLocal, side: Side): void;
 export {};

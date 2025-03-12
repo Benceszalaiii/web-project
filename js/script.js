@@ -48,7 +48,7 @@ function updateDriverCard(dropdown, card) {
         const response = yield fetch("json/drivers.json");
         const data = yield response.json();
         const drivers = data.drivers;
-        const selectedDriver = drivers.find((driver) => driver.driver_id === dropdown.value);
+        const selectedDriver = drivers.find((driver) => driver.driver_id === parseInt(dropdown.value, 10));
         if (selectedDriver) {
             card.innerHTML = `
       <div class="flex items-center w-full justify-center">
