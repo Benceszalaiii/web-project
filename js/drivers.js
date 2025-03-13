@@ -29,33 +29,89 @@ document.addEventListener("DOMContentLoaded", async () => {
       const selectedDriver = drivers.find(
         (driver) => driver.driver_id === dropdown.value
       );
-    async function getData(){
-        const session = await (await fetch(`https://api.openf1.org/v1/sessions?session_key=latest&driver_id=${selectedDriver.driver_id}`)).json();
-        const car_data = await (await fetch(`https://api.openf1.org/v1/car_data?driver_number=${selectedDriver.driver_id}&session_key=latest`)).json();
-        const position = await (await fetch(`https://api.openf1.org/v1/position?session_key=latest&driver_number=${selectedDriver.driver_id}`)).json();
-        return {session, car_data, position};
-    }
-      if(selectedDriver) {
+      async function getData() {
+        const session = await (
+          await fetch(
+            `https://api.openf1.org/v1/sessions?session_key=latest&driver_id=${selectedDriver.driver_id}`,
+            {
+              method: "GET",
+              mode: "no-cors",
+              allowedHeaders: [
+                "Content-Type",
+                "Authorization",
+                "X-Requested-With",
+                "device-remember-token",
+                "Access-Control-Allow-Origin",
+                "Origin",
+                "Accept",
+              ],
+            }
+          )
+        ).json();
+        const car_data = await (
+          await fetch(
+            `https://api.openf1.org/v1/car_data?driver_number=${selectedDriver.driver_id}&session_key=latest`,
+            {
+              method: "GET",
+              allowedHeaders: [
+                "Content-Type",
+                "Authorization",
+                "X-Requested-With",
+                "device-remember-token",
+                "Access-Control-Allow-Origin",
+                "Origin",
+                "Accept",
+              ],
+            }
+          )
+        ).json();
+        const position = await (
+          await fetch(
+            `https://api.openf1.org/v1/position?session_key=latest&driver_number=${selectedDriver.driver_id}`,
+            {
+              method: "GET",
+              mode: "no-cors",
+              allowedHeaders: [
+                "Content-Type",
+                "Authorization",
+                "X-Requested-With",
+                "device-remember-token",
+                "Access-Control-Allow-Origin",
+                "Origin",
+                "Accept",
+              ],
+            }
+          )
+        ).json();
+        return { session, car_data, position };
+      }
+      if (selectedDriver) {
         const res = getData();
-        res.then((data)=> {
+        res.then((data) => {
           if (selectedDriver) {
             card.innerHTML = `
               <div class="flex items-center w-full justify-center">
-              <img src="${selectedDriver.headshot_url}" alt="${selectedDriver.full_name}" class="size-48 mt-2 rounded-lg mx-auto" />
+              <img src="${selectedDriver.headshot_url}" alt="${
+              selectedDriver.full_name
+            }" class="size-48 mt-2 rounded-lg mx-auto" />
               </div>
-              <h2 class="text-4xl font-semibold">${selectedDriver.full_name} (${selectedDriver.name_acronym})</h2>
+              <h2 class="text-4xl font-semibold">${selectedDriver.full_name} (${
+              selectedDriver.name_acronym
+            })</h2>
               <p><strong>Team:</strong> ${selectedDriver.team}</p>
               <p>${data.session.circuit_name}</p>
-              <p>${data.position.sort((a, b)=> {return new Date(b.date) - new Date(a.date)})[0].position}</p>
+              <p>${
+                data.position.sort((a, b) => {
+                  return new Date(b.date) - new Date(a.date);
+                })[0].position
+              }</p>
               `;
           } else {
             card.innerHTML = "Select a driver";
           }
-        })
+        });
       }
-      
     }
-  
 
     // Add event listeners for dropdown changes
     driverDropdown1.addEventListener("change", () =>
