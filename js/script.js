@@ -12,7 +12,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.scrollHandler = scrollHandler;
 exports.getSessionByDriver = getSessionByDriver;
 exports.getDriverById = getDriverById;
-exports.updateDriverCard = updateDriverCard;
 exports.drawDriverCard = drawDriverCard;
 function scrollHandler(a) {
     var _a, _b;
@@ -43,26 +42,7 @@ function getDriverById(driverId) {
         }
     });
 }
-function updateDriverCard(dropdown, card) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const response = yield fetch("json/drivers.json");
-        const data = yield response.json();
-        const drivers = data.drivers;
-        const selectedDriver = drivers.find((driver) => driver.driver_id === parseInt(dropdown.value, 10));
-        if (selectedDriver) {
-            card.innerHTML = `
-      <div class="flex items-center w-full justify-center">
-      <img src="${selectedDriver.headshot_url}" alt="${selectedDriver.full_name}" class="size-48 mt-2 rounded-lg mx-auto" />
-      </div>
-      <h2 class="text-4xl font-semibold">${selectedDriver.full_name} (${selectedDriver.name_acronym})</h2>
-      <p><strong>Team:</strong> ${selectedDriver.team}</p>
-      `;
-        }
-        else {
-            card.innerHTML = "Select a driver";
-        }
-    });
-}
+
 function drawDriverCard(data, side) {
     const sideElement = document.getElementById(side);
     if (!sideElement) {
