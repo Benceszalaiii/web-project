@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const selectedDriver = drivers.find(
         (driver) => driver.driver_id === dropdown.value
       );
+
       async function getData() {
         const session = await (
           await fetch(
@@ -99,6 +100,7 @@ document.addEventListener("DOMContentLoaded", async () => {
               selectedDriver.name_acronym
             })</h2>
               <p><strong>Team:</strong> ${selectedDriver.team}</p>
+
               <p>${data.session.circuit_name}</p>
               <p>${
                 data.position.sort((a, b) => {
@@ -111,6 +113,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           }
         });
       }
+
     }
 
     // Add event listeners for dropdown changes

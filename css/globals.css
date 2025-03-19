@@ -2,6 +2,19 @@
 @import "tailwindcss/preflight";
 @tailwind utilities;
 
+.index {
+  backdrop-filter: blur(3px);
+  background-image: url("../images/index_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
+
+.choose-button:hover{
+  background-color: #e31f1f
+}
+
+
 #navbar {
   @apply p-12;
 }
