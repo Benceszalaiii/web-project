@@ -29,7 +29,7 @@ function getGeo(circuit_id, side) {
         fetch(`../json/circuits_geo/${circuit_id}`).then((res) => {
             res.json().then((data) => {
                 console.log(data.bbox);
-                let vec = [0, 0
+                let vec = [0, 0]
                 if (data.bbox[0] > 180){
                     vec[0] = data.bbox[0] - 180;
 
