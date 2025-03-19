@@ -59,4 +59,5 @@
     padding:8px;
     @apply rounded-t-xl py-2 font-semibold w-full text-center border-b border-slate-800;
   }
+
 }
