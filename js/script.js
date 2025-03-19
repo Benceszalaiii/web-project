@@ -42,7 +42,6 @@ function getDriverById(driverId) {
         }
     });
 }
-
 function drawDriverCard(data, side) {
     const sideElement = document.getElementById(side);
     if (!sideElement) {

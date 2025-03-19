@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         (driver) => driver.driver_id === dropdown.value
       );
 
+
       async function getData() {
         const session = await (
           await fetch(
@@ -112,10 +113,10 @@ document.addEventListener("DOMContentLoaded", async () => {
           }
         });
       }
+
       if(selectedDriver) {
-        const session = getSession().then((session)=> session);
-      fetch(`https://api.openf1.org/v1/position?session_key=latest&driver_number=${selectedDriver.driver_id}`).then((res)=> {
-        res.json().then((data)=> {
+        const res = getData();
+        res.then((data)=> {
           if (selectedDriver) {
             card.innerHTML = `
               <div class="flex items-center w-full justify-center">
@@ -123,16 +124,17 @@ document.addEventListener("DOMContentLoaded", async () => {
               </div>
               <h2 class="text-4xl font-semibold">${selectedDriver.full_name} (${selectedDriver.name_acronym})</h2>
               <p><strong>Team:</strong> ${selectedDriver.team}</p>
-              <p>${session.then((session)=> session.circuit_name)}</p>
-              <p>${data.sort((a, b)=> {return new Date(b.date) - new Date(a.date)})[0].position}</p>
+              <p>${data.session.circuit_name}</p>
+              <p>${data.position.sort((a, b)=> {return new Date(b.date) - new Date(a.date)})[0].position}</p>
               `;
           } else {
             card.innerHTML = "Select a driver";
           }
         })
-      })
+      }
+      
     }
-    }
+  
 
     // Add event listeners for dropdown changes
     driverDropdown1.addEventListener("change", () =>
