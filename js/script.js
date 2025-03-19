@@ -18,7 +18,6 @@ function drawDriverCard(data, side) {
   `;
 }
 
-// Scroll handler to update navbar style on scroll
 function scrollHandler() {
   const navbar = document.getElementById("navbar");
   if (window.scrollY > 75) {

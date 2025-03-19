@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const data = await response.json();
     const drivers = data.drivers;
 
-    // Populate dropdowns with driver names
     drivers.forEach((driver) => {
       const option1 = document.createElement("option");
       option1.value = driver.driver_id;
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       driverDropdown2.appendChild(option2);
     });
 
-    // Function to update the existing driver card with detailed stats
     function updateDriverCard(dropdown, card, side) {
       const selectedDriver = drivers.find((driver) => driver.driver_id === dropdown.value);
       if (!selectedDriver) return;
@@ -36,7 +34,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         driver2Data = selectedDriver;
       }
 
-      // Function to compare stats with "more is better"
       function compareMoreIsBetter(stat1, stat2) {
         if (driver1Data && driver2Data) {
           return stat1 > stat2 ? ["text-red-500", ""] : stat1 < stat2 ? ["", "text-red-500"] : ["", ""];
@@ -44,7 +41,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         return ["", ""];
       }
 
-      // Function to compare stats with "less is better"
       function compareLessIsBetter(stat1, stat2) {
         if (driver1Data && driver2Data) {
           return stat1 < stat2 ? ["text-red-500", ""] : stat1 > stat2 ? ["", "text-red-500"] : ["", ""];
@@ -52,7 +48,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         return ["", ""];
       }
 
-      // Special function for "best finishes" comparison with error handling
       function compareBestFinish(finish1, finish2) {
         if (!finish1 || !finish2 || !finish1.includes(",") || !finish2.includes(",")) return ["", ""];
         
@@ -64,7 +59,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         } else if (bestFinish1 > bestFinish2) {
           return ["", "text-red-500"];
         } else {
-          // If finishes are tied, compare the number of times they achieved that finish
           const times1 = parseInt(finish1.split(",")[1]?.split("x")[0]) || 0;
           const times2 = parseInt(finish2.split(",")[1]?.split("x")[0]) || 0;
 
@@ -72,7 +66,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
       }
 
-      // Update the existing card content with the comparisons
       card.innerHTML = `
         <div class="driver-card-content">
           <div style="display: flex; justify-content: center; margin-bottom: 20px;">
@@ -95,7 +88,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       `;
     }
 
-    // Event listeners for dropdowns to update the existing driver cards on selection
     driverDropdown1.addEventListener("change", () => updateDriverCard(driverDropdown1, driverCard1, "left"));
     driverDropdown2.addEventListener("change", () => updateDriverCard(driverDropdown2, driverCard2, "right"));
 
