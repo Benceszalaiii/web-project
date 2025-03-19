@@ -30,26 +30,26 @@ function getGeo(circuit_id, side) {
             res.json().then((data) => {
                 console.log(data.bbox);
                 let vec = [0, 0]
-                if (data.bbox[0] > 100){
-                    vec[0] = data.bbox[0] - 100;
+                if (data.bbox[0] > 180){
+                    vec[0] = data.bbox[0] - 180;
                 }
                 else {
                     vec[0] = data.bbox[0];
                 }
-                if (data.bbox[1] > 100){
+                if (data.bbox[1] > 180){
                     vec[1] = data.bbox[1] 
-                    + 100
+                    + 180
                 }
                 else{
                     vec[1] = data.bbox[1]
                 }
-                if (side === Side.LEFT) {
+                if (side === "left") {
                     L.geoJSON(data).addTo(map1);
-                    map1.setView(vec, 8)
+                    map1.setView([vec[1], vec[0]], 13)
                 }
-                else {
-                    L.geoJSON(data).addTo(map1);
-                    map2.setView(vec, 8)
+                else{
+                    L.geoJSON(data).addTo(map2);
+                    map2.setView([vec[1], vec[0]], 13)   
                 }
             });
         });
