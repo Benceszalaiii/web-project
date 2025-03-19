@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const driverCard1 = document.getElementById("left");
   const driverCard2 = document.getElementById("right");
 
+  let driver1Data = null;
+  let driver2Data = null;
+
   try {
     const response = await fetch("json/drivers.json");
     const data = await response.json();
@@ -14,116 +17,89 @@ document.addEventListener("DOMContentLoaded", async () => {
       const option1 = document.createElement("option");
       option1.value = driver.driver_id;
       option1.textContent = driver.full_name;
-      // option1.className = "bg-black border rounded-none";
       driverDropdown1.appendChild(option1);
 
       const option2 = document.createElement("option");
       option2.value = driver.driver_id;
       option2.textContent = driver.full_name;
-
       driverDropdown2.appendChild(option2);
     });
 
-    // Function to update driver card
-    function updateDriverCard(dropdown, card) {
-      const selectedDriver = drivers.find(
-        (driver) => driver.driver_id === dropdown.value
-      );
+    // Function to update the existing driver card with detailed stats
+    function updateDriverCard(dropdown, card, side) {
+      const selectedDriver = drivers.find((driver) => driver.driver_id === dropdown.value);
+      if (!selectedDriver) return;
 
-      async function getData() {
-        const session = await (
-          await fetch(
-            `https://api.openf1.org/v1/sessions?session_key=latest&driver_id=${selectedDriver.driver_id}`,
-            {
-              method: "GET",
-              mode: "no-cors",
-              allowedHeaders: [
-                "Content-Type",
-                "Authorization",
-                "X-Requested-With",
-                "device-remember-token",
-                "Access-Control-Allow-Origin",
-                "Origin",
-                "Accept",
-              ],
-            }
-          )
-        ).json();
-        const car_data = await (
-          await fetch(
-            `https://api.openf1.org/v1/car_data?driver_number=${selectedDriver.driver_id}&session_key=latest`,
-            {
-              method: "GET",
-              allowedHeaders: [
-                "Content-Type",
-                "Authorization",
-                "X-Requested-With",
-                "device-remember-token",
-                "Access-Control-Allow-Origin",
-                "Origin",
-                "Accept",
-              ],
-            }
-          )
-        ).json();
-        const position = await (
-          await fetch(
-            `https://api.openf1.org/v1/position?session_key=latest&driver_number=${selectedDriver.driver_id}`,
-            {
-              method: "GET",
-              mode: "no-cors",
-              allowedHeaders: [
-                "Content-Type",
-                "Authorization",
-                "X-Requested-With",
-                "device-remember-token",
-                "Access-Control-Allow-Origin",
-                "Origin",
-                "Accept",
-              ],
-            }
-          )
-        ).json();
-        return { session, car_data, position };
-      }
-      if (selectedDriver) {
-        const res = getData();
-        res.then((data) => {
-          if (selectedDriver) {
-            card.innerHTML = `
-              <div class="flex items-center w-full justify-center">
-              <img src="${selectedDriver.headshot_url}" alt="${
-              selectedDriver.full_name
-            }" class="size-48 mt-2 rounded-lg mx-auto" />
-              </div>
-              <h2 class="text-4xl font-semibold">${selectedDriver.full_name} (${
-              selectedDriver.name_acronym
-            })</h2>
-              <p><strong>Team:</strong> ${selectedDriver.team}</p>
-
-              <p>${data.session.circuit_name}</p>
-              <p>${
-                data.position.sort((a, b) => {
-                  return new Date(b.date) - new Date(a.date);
-                })[0].position
-              }</p>
-              `;
-          } else {
-            card.innerHTML = "Select a driver";
-          }
-        });
+      if (side === "left") {
+        driver1Data = selectedDriver;
+      } else {
+        driver2Data = selectedDriver;
       }
 
+      // Function to compare stats with "more is better"
+      function compareMoreIsBetter(stat1, stat2) {
+        if (driver1Data && driver2Data) {
+          return stat1 > stat2 ? ["text-red-500", ""] : stat1 < stat2 ? ["", "text-red-500"] : ["", ""];
+        }
+        return ["", ""];
+      }
+
+      // Function to compare stats with "less is better"
+      function compareLessIsBetter(stat1, stat2) {
+        if (driver1Data && driver2Data) {
+          return stat1 < stat2 ? ["text-red-500", ""] : stat1 > stat2 ? ["", "text-red-500"] : ["", ""];
+        }
+        return ["", ""];
+      }
+
+      // Special function for "best finishes" comparison with error handling
+      function compareBestFinish(finish1, finish2) {
+        if (!finish1 || !finish2 || !finish1.includes(",") || !finish2.includes(",")) return ["", ""];
+        
+        const bestFinish1 = parseInt(finish1.split("x")[0]) || 0;
+        const bestFinish2 = parseInt(finish2.split("x")[0]) || 0;
+
+        if (bestFinish1 < bestFinish2) {
+          return ["text-red-500", ""];
+        } else if (bestFinish1 > bestFinish2) {
+          return ["", "text-red-500"];
+        } else {
+          // If finishes are tied, compare the number of times they achieved that finish
+          const times1 = parseInt(finish1.split(",")[1]?.split("x")[0]) || 0;
+          const times2 = parseInt(finish2.split(",")[1]?.split("x")[0]) || 0;
+
+          return times1 > times2 ? ["text-red-500", ""] : times1 < times2 ? ["", "text-red-500"] : ["", ""];
+        }
+      }
+
+      // Update the existing card content with the comparisons
+      card.innerHTML = `
+        <div class="driver-card-content">
+          <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <img src="${selectedDriver.headshot_url}" alt="${selectedDriver.full_name}" class="driver-img mb-4" style="height: 250px; width: auto;" />
+          </div>
+          <h2 class="text-2xl font-bold mb-2">${selectedDriver.full_name} (${selectedDriver.name_acronym})</h2>
+          <p><strong>Team:</strong> ${selectedDriver.team}</p>
+          <p><strong>Country:</strong> ${selectedDriver.country}</p>
+          <p class="${compareMoreIsBetter(driver1Data?.race_starts, driver2Data?.race_starts)[side === "left" ? 0 : 1]}"><strong>Race Starts:</strong> ${selectedDriver.race_starts}</p>
+          <p class="${compareMoreIsBetter(driver1Data?.wins, driver2Data?.wins)[side === "left" ? 0 : 1]}"><strong>Wins:</strong> ${selectedDriver.wins}</p>
+          <p class="${compareMoreIsBetter(driver1Data?.pole_positions, driver2Data?.pole_positions)[side === "left" ? 0 : 1]}"><strong>Pole Positions:</strong> ${selectedDriver.pole_positions}</p>
+          <p class="${compareMoreIsBetter(driver1Data?.podiums, driver2Data?.podiums)[side === "left" ? 0 : 1]}"><strong>Podiums:</strong> ${selectedDriver.podiums}</p>
+          <p class="${compareMoreIsBetter(driver1Data?.points_scored, driver2Data?.points_scored)[side === "left" ? 0 : 1]}"><strong>Points Scored:</strong> ${selectedDriver.points_scored}</p>
+          <p class="${compareMoreIsBetter(driver1Data?.world_championships, driver2Data?.world_championships)[side === "left" ? 0 : 1]}"><strong>World Championships:</strong> ${selectedDriver.world_championships}</p>
+          <p class="${compareBestFinish(driver1Data?.best_finish, driver2Data?.best_finish)[side === "left" ? 0 : 1]}"><strong>Best Finish:</strong> ${selectedDriver.best_finish}</p>
+          <p class="${compareLessIsBetter(driver1Data?.avarage_finish, driver2Data?.avarage_finish)[side === "left" ? 0 : 1]}"><strong>Average Finish:</strong> ${selectedDriver.avarage_finish}</p>
+          <p class="${compareLessIsBetter(driver1Data?.retirements, driver2Data?.retirements)[side === "left" ? 0 : 1]}"><strong>Retirements:</strong> ${selectedDriver.retirements}</p>
+          <p><strong>First GP:</strong> ${selectedDriver.first_gp}</p>
+        </div>
+      `;
     }
 
-    // Add event listeners for dropdown changes
-    driverDropdown1.addEventListener("change", () =>
-      updateDriverCard(driverDropdown1, driverCard1)
-    );
-    driverDropdown2.addEventListener("change", () =>
-      updateDriverCard(driverDropdown2, driverCard2)
-    );
+    // Event listeners for dropdowns to update the existing driver cards on selection
+    driverDropdown1.addEventListener("change", () => updateDriverCard(driverDropdown1, driverCard1, "left"));
+    driverDropdown2.addEventListener("change", () => updateDriverCard(driverDropdown2, driverCard2, "right"));
+
   } catch (error) {
-    console.error("Error loading driver data:", error);
+    console.error("Error loading drivers:", error);
   }
 });
